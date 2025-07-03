@@ -63,7 +63,7 @@ def read_mask(mpath, size):
     masks = []
     mnames = os.listdir(mpath)
     mnames.sort(key=natural_sort_key)
-    print(mnames)
+
     for mp in mnames:
         m = Image.open(os.path.join(mpath, mp))
         m = m.resize(size, Image.NEAREST)
